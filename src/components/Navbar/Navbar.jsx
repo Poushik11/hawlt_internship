@@ -4,7 +4,6 @@ import logo from "../../Assets/logo.png";
 import "./Navbar.css";
 
 // BEM --> Block Element Modifier
-
 const Menu = () => (
   <>
     <p>
@@ -29,20 +28,20 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="gpt3__navbar">
-      <div className="gpt3__navbar-links">
+    <div className="nav__navbar">
+      <div className="nav__navbar-links">
         <div className="main_logo">
           <img src={logo} alt="logo" />
         </div>
-        <div className="gpt3__navbar-links_container">
+        <div className="nav__navbar-links_container">
           <Menu />
         </div>
       </div>
-      <div className="gpt3__navbar-sign">
+      <div className="nav__navbar-sign">
         <p>Log in</p>
         <button type="button">Sign up</button>
       </div>
-      <div className="gpt3__navbar-menu">
+      <div className="nav__navbar-menu">
         {toggleMenu ? (
           <RiCloseLine
             color="#fff"
@@ -57,10 +56,10 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="gpt3__navbar-menu_container scale-up-center">
-            <div className="gpt3__navbar-menu_container-links">
+          <div className="nav__navbar-menu_container scale-up-center">
+            <div className="nav__navbar-menu_container-links">
               <Menu />
-              <div className="gpt3__navbar-menu_container-links-sign">
+              <div className="nav__navbar-menu_container-links-sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
               </div>

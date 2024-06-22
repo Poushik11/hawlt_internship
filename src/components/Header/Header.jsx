@@ -8,8 +8,8 @@ import HeaderImage from "../HeaderImage/HeaderImage";
 const Header = () => {
   return (
     <>
-      <div className="gpt3__header section__padding">
-        <div className="gpt3__header-content">
+      <div className="hd__header section__padding">
+        <div className="hd__header-content">
           <h1 className="gradient__text">Get your Ideal Story.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum beatae
@@ -17,15 +17,15 @@ const Header = () => {
             nobis adipisci tenetur, pariatur maiores exercitationem. Eius quas
             soluta dolorum accusamus.
           </p>
-          <div className="gpt3__header-content__input">
+          <div className="hd__header-content__input">
             <input type="text" placeholder="search here" />
             <button type="button">Get Started</button>
           </div>
-          <div className="gpt3__header-content__people">
+          <div className="hd__header-content__people">
             <p>Find a perfect place in your city</p>
           </div>
         </div>
-        <div className="gpt3__header-image">
+        <div className="hd__header-image">
           <img src={home} alt="ai" />
         </div>
       </div>

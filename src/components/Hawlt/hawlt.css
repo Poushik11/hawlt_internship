@@ -1,26 +1,26 @@
-.gpt3__possibility {
+.ht__possibility {
   display: flex;
   flex-direction: row;
 }
-.gpt3__possibility-image {
+.ht__possibility-image {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: flex-start;
   margin-right: 2rem;
 }
-.gpt3__possibility-image img {
+.ht__possibility-image img {
   width: 70%;
   height: 80%;
 }
-.gpt3__possibility-content {
+.ht__possibility-content {
   display: flex;
   flex: 1;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
 }
-.gpt3__possibility-content h4 {
+.ht__possibility-content h4 {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 16px;
@@ -28,17 +28,17 @@
 
   color: #71e5ff;
 }
-.gpt3__possibility-content h4:last-child {
+.ht__possibility-content h4:last-child {
   color: #ff8a71;
 }
-.gpt3__possibility-content h1 {
+.ht__possibility-content h1 {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: 34px;
   line-height: 45px;
   margin: 1rem 0;
 }
-.gpt3__possibility-content p {
+.ht__possibility-content p {
   font-family: var(--font-family);
   font-size: 16px;
   line-height: 30px;
@@ -47,13 +47,13 @@
   margin-bottom: 2rem;
 }
 @media screen and (max-width: 950px) {
-  .gpt3__possibility {
+  .ht__possibility {
     flex-direction: column;
   }
-  .gpt3__possibility-image {
+  .ht__possibility-image {
     margin: 1rem 0;
   }
-  .gpt3__possibility-content {
+  .ht__possibility-content {
     margin: 2rem 0;
   }
 }
