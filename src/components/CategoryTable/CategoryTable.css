@@ -2,6 +2,10 @@
   font-family: Arial, sans-serif;
   /* border: 2px solid green; */
   border-top: none;
+  color: white;
+  margin-bottom: 100px;
+  width: 94vw;
+  margin: 3vw;
 }
 
 .category-header {
@@ -21,7 +25,7 @@
 }
 
 .category-title.active {
-  color: red;
+  color: rgb(144, 212, 80);
 }
 
 .category-content {
