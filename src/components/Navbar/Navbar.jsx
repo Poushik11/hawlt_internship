@@ -7,7 +7,7 @@ import "./Navbar.css";
 const Menu = () => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <a href="#home">Homes</a>
     </p>
     <p>
       <a href="#Rent">Rent</a>
