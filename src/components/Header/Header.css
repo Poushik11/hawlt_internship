@@ -82,6 +82,7 @@
   width: 181.79px;
   height: 38px;
 }
+
 .hd__header-content__people p {
   font-family: var(--font-family);
   font-weight: 500;
@@ -98,6 +99,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .hd__header-image img {
   width: 90%;
   height: 90%;
@@ -128,6 +130,7 @@
   .hd__header-content__people {
     flex-direction: column;
   }
+
   .hd__header-content__people p {
     margin: 0;
   }
@@ -155,4 +158,45 @@
     font-size: 12px;
     line-height: 16px;
   }
+}
+
+
+/* Header.css */
+.hd__header-content__input {
+  position: relative;
+  width: 100%;
+}
+
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  /* Position the dropdown below the input */
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  /* Ensure dropdown width matches the input width */
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  margin-top: 5px;
+  padding: 0;
+  list-style-type: none;
+  display: none;
+  /* Initially hide the dropdown */
+}
+
+.suggestions-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestions-dropdown li:hover {
+  background: #f0f0f0;
+}
+
+.hd__header-content__input:hover .suggestions-dropdown {
+  display: block;
+  /* Show dropdown on hover */
 }
