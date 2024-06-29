@@ -1,40 +1,73 @@
+// Navbar.js
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 import logo from "../../Assets/logo.png";
 import "./Navbar.css";
+import { Link, NavLink } from "react-router-dom";
+import Modal from "../Contact/Modal"; // Ensure correct path to Modal
 
 // BEM --> Block Element Modifier
-const Menu = () => (
+const Menu = ({ onContactClick }) => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <NavLink
+        to="rent"
+        className={({ isActive }) =>
+          `block py-2 pr-4 pl-3 duration-200 ${
+            isActive ? "text-orange-700" : "text-gray-700"
+          } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+        }
+      >
+        Rent
+      </NavLink>
     </p>
     <p>
-      <a href="#Rent">Rent</a>
+      <NavLink
+        to="#Property"
+        className={({ isActive }) =>
+          `block py-2 pr-4 pl-3 duration-200 ${
+            isActive ? "text-orange-700" : "text-gray-700"
+          } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+        }
+      >
+        Property
+      </NavLink>
     </p>
     <p>
-      <a href="#possibility">Post Property</a>
+      <NavLink
+        to="#About-Us"
+        className={({ isActive }) =>
+          `block py-2 pr-4 pl-3 duration-200 ${
+            isActive ? "text-orange-700" : "text-gray-700"
+          } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+        }
+      >
+        About Us
+      </NavLink>
     </p>
     <p>
-      <a href="#features">Download</a>
-    </p>
-    <p>
-      <a href="#blog">Contact Us</a>
+      <button
+        className="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0"
+        onClick={onContactClick}
+      >
+        Contact Us
+      </button>
     </p>
   </>
 );
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <div className="nav__navbar">
       <div className="nav__navbar-links">
-        <div className="main_logo">
+        <Link className="main_logo" to="/">
           <img src={logo} alt="logo" />
-        </div>
+        </Link>
         <div className="nav__navbar-links_container">
-          <Menu />
+          <Menu onContactClick={() => setShowModal(true)} />
         </div>
       </div>
       <div className="nav__navbar-sign">
@@ -58,7 +91,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="nav__navbar-menu_container scale-up-center">
             <div className="nav__navbar-menu_container-links">
-              <Menu />
+              <Menu onContactClick={() => setShowModal(true)} />
               <div className="nav__navbar-menu_container-links-sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
@@ -67,6 +100,25 @@ const Navbar = () => {
           </div>
         )}
       </div>
+
+      <Modal show={showModal} onClose={() => setShowModal(false)}>
+        <h2>Contact Us</h2>
+        <form>
+          <label>
+            Name:
+            <input type="text" name="name" />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Message:
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </Modal>
     </div>
   );
 };
