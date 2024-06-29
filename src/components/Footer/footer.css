@@ -1,9 +1,15 @@
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+
 .ft__footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: var(--color-footer);
+  background-color: black;
 }
 
 .ft__footer-heading {
@@ -21,12 +27,12 @@
 }
 .ft__footer-btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Correct alignment for items within the flex container */
+  justify-content: flex-end; /* Align items to the right */
   padding: 1rem;
   border: 1px solid #ffffff;
-  text-align: center;
-  margin-bottom: 10rem;
+  text-align: left;
+  margin-bottom: 3rem;
   cursor: pointer;
 }
 
@@ -49,43 +55,61 @@
   text-align: left;
 }
 .ft__footer-links div {
+  margin-top: -10px;
   width: 250px;
-  margin: 1rem;
+  margin: 2rem;
+  text-align: left;
 }
 .ft__footer-links_logo {
+  margin-right: -900px;
+  margin-top: -10px;
   display: flex;
   flex-direction: column;
 }
 .ft__footer-links_logo img {
-  width: 50%;
-  height: 50%;
+  margin-top: -10px;
+  width: 170px;
+  height: auto;
   margin-bottom: 1rem;
 }
 .ft__footer-links_logo p {
-  font-family: var(--font-family);
-  font-size: 12px;
+  font-family: "Inter", var(--font-family); /* Apply 'Inter' font */
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.ft__footer-links_logo h5 {
+  font-family: "Readex Pro", var(--font-family); /* Added 'Readex Pro' font */
+  font-size: 20px;
   line-height: 14px;
   color: #ffffff;
+  font-weight: bold;
 }
 .ft__footer-links_div {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  width: 45%;
 }
 .ft__footer-links_div h4 {
-  font-family: var(--font-family);
-  font-size: 14px;
+  font-family: "Inter", var(--font-family); /* Apply 'Inter' font */
+  font-size: 16px;
   line-height: 16px;
   color: #ffffff;
   margin-bottom: 1rem;
+  font-weight: bold;
+  margin-left: -750px;
 }
 .ft__footer-links_div p {
-  font-family: var(--font-family);
-  font-size: 12px;
+  font-family: "Inter", var(--font-family); /* Apply 'Inter' font */
+  font-size: 14px;
   line-height: 14px;
   color: #ffffff;
   margin: 0.5rem 0;
   cursor: pointer;
+  margin-left: -750px;
 }
 .ft__footer-copyright {
   width: 100%;
@@ -97,8 +121,9 @@
   font-size: 12px;
   line-height: 14px;
   color: #ffffff;
+  text-align: left; /* Align text to the left */
+  margin-right: 100px;
 }
-
 @media screen and (max-width: 850px) {
   .ft__footer-heading h1 {
     font-size: 44px;
@@ -116,5 +141,9 @@
   .ft__footer-btn p {
     font-size: 14px;
     line-height: 20px;
+  }
+  .ft__footer-right {
+    flex: 50;
+    margin-left: 500px; /* Adjust as needed */
   }
 }

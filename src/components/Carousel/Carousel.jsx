@@ -1,6 +1,7 @@
 // src/Carousel.js
 import React from "react";
 import Slider from "react-slick";
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Carousel.css";
@@ -9,7 +10,7 @@ import CategoryTable from "../CategoryTable/CategoryTable";
 const testimonials = [
   {
     id: 1,
-    user: "User",
+    user: "User 1",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
   {
@@ -22,6 +23,11 @@ const testimonials = [
     user: "User 3",
     text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
   },
+  {
+    id: 4,
+    user: "User 4",
+    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+  },
 ];
 
 const Carousel = () => {
@@ -29,8 +35,8 @@ const Carousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    slidesToScroll: 2,
   };
 
   return (

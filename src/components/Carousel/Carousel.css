@@ -1,9 +1,13 @@
 .carousel-container {
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
   text-align: center;
   font-family: Arial, sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 80px; /* Default spacing */
+}
+
+.carousel-container + .carousel-container {
+  margin-top: 50px; /* Additional top margin for the second container */
 }
 
 .carousel-container h2 {
@@ -47,4 +51,8 @@ p {
 
 .slick-dots li.slick-active button:before {
   color: #333;
+}
+
+.carousel-slide > div {
+  margin: 0 20px;
 }
