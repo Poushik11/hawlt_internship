@@ -4,6 +4,7 @@
   align-items: center;
   padding: 2rem 6rem;
 }
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
@@ -108,6 +109,7 @@
 .nav__navbar-menu_container p {
   margin: 1rem 0;
 }
+
 .nav__navbar-menu_container-links-sign {
   display: none;
 }
@@ -116,6 +118,7 @@
   .nav__navbar-links_container {
     display: none;
   }
+
   .nav__navbar-menu {
     display: flex;
   }
@@ -131,12 +134,15 @@
   .nav__navbar {
     padding: 2rem;
   }
+
   .nav__navbar-sign {
     display: none;
   }
+
   .nav__navbar-menu_container {
     top: 20px;
   }
+
   .nav__navbar-menu_container-links-sign {
     display: block;
   }
