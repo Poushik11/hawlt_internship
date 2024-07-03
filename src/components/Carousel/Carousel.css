@@ -1,16 +1,15 @@
 .carousel-container {
-  max-width: 600px;
+  max-width: 900px;
   margin: auto;
   text-align: center;
   font-family: Arial, sans-serif;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .carousel-container h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 1em;
-  color: rgb(230, 95, 95);
-  font-weight: 700;
+  color: #333;
 }
 
 .carousel-slide {
@@ -18,33 +17,71 @@
   justify-content: center;
 }
 
-.carousel-content {
+.carousel-slide .carousel-content {
   background: #fff;
   border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  max-width: 500px;
-  margin: 0 auto;
+  padding: 10px;
+  /* Decrease padding to reduce space inside the card */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 370px;
+  height: 350px;
+  margin: 0 10px;
+  /* Decrease margin to reduce space between cards */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.carousel-slide.slick-center {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.carousel-slide:not(.slick-center) {
+  transform: scale(0.9);
+  z-index: 1;
+  opacity: 0.7;
+  /* Optional: reduce opacity for non-centered cards */
 }
 
 .user-icon {
-  font-size: 2em;
+  font-size: 3em;
   margin-bottom: 10px;
+  color: #e65f5f;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 10px;
+  color: #333;
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 1em;
+  color: #666;
 }
 
 .slick-dots li button:before {
-  color: #888;
+  color: #aaa;
 }
 
 .slick-dots li.slick-active button:before {
   color: #333;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 3;
+  color: #666;
+  transition: color 0.3s ease-in-out;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    display: block !important;
+  }
 }

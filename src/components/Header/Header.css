@@ -1,17 +1,21 @@
+/* Header.css */
+
+/* Header container */
 .hd__header {
   display: flex;
 }
 
+/* Main content area */
 .hd__header-content {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-
   margin-right: 5rem;
 }
 
+/* Header title */
 .hd__header-content h1 {
   font-family: var(--font-family);
   font-weight: 800;
@@ -20,6 +24,7 @@
   letter-spacing: -0.04em;
 }
 
+/* Header description */
 .hd__header-content p {
   font-family: var(--font-family);
   font-style: normal;
@@ -30,12 +35,16 @@
   margin-top: 1.5rem;
 }
 
+/* Input and button container */
 .hd__header-content__input {
+  position: relative;
   width: 100%;
   margin: 2rem 0 1rem;
   display: flex;
+  align-items: center;
 }
 
+/* Search input */
 .hd__header-content__input input {
   flex: 2;
   width: 100%;
@@ -48,28 +57,29 @@
   border: 2px solid var(--color-footer);
   padding: 0 1rem;
   outline: none;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
+/* Get Started button */
 .hd__header-content__input button {
   flex: 0.6;
-  width: 100%;
   min-height: 50px;
   font-family: var(--font-family);
   font-weight: bold;
   font-size: 20px;
   line-height: 27px;
   background: #ff4820;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   color: #ffffff;
   cursor: pointer;
   padding: 0 1rem;
   outline: none;
   border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
+/* People section */
 .hd__header-content__people {
   width: 100%;
   display: flex;
@@ -78,11 +88,13 @@
   margin-top: 2rem;
 }
 
+/* People image */
 .hd__header-content__people img {
   width: 181.79px;
   height: 38px;
 }
 
+/* People text */
 .hd__header-content__people p {
   font-family: var(--font-family);
   font-weight: 500;
@@ -93,6 +105,7 @@
   text-align: center;
 }
 
+/* Image container */
 .hd__header-image {
   flex: 1;
   display: flex;
@@ -100,12 +113,7 @@
   align-items: center;
 }
 
-.hd__header-image img {
-  width: 90%;
-  height: 90%;
-  border-radius: 5%;
-}
-
+/* Responsive layout adjustments */
 @media screen and (max-width: 1050px) {
   .hd__header {
     flex-direction: column;
@@ -160,31 +168,21 @@
   }
 }
 
-
-/* Header.css */
-.hd__header-content__input {
-  position: relative;
-  width: 100%;
-}
-
+/* Suggestions Dropdown */
 .suggestions-dropdown {
   position: absolute;
-  top: 100%;
-  /* Position the dropdown below the input */
+  top: calc(100% + 5px);
   left: 0;
   background: white;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 100%;
-  /* Ensure dropdown width matches the input width */
+  width: calc(100% - 2px);
   max-height: 200px;
   overflow-y: auto;
   z-index: 1000;
-  margin-top: 5px;
-  padding: 0;
-  list-style-type: none;
   display: none;
   /* Initially hide the dropdown */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .suggestions-dropdown li {
@@ -196,7 +194,12 @@
   background: #f0f0f0;
 }
 
+/* Show dropdown on hover of input, not button */
 .hd__header-content__input:hover .suggestions-dropdown {
   display: block;
-  /* Show dropdown on hover */
+}
+
+/* Hide dropdown on hover of button */
+.hd__header-content__input button:hover+.suggestions-dropdown {
+  display: none;
 }
