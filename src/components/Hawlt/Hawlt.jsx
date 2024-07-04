@@ -4,13 +4,15 @@ import React from "react";
 import image from "../../Assets/mobile.png";
 import play from "../../Assets/playstore.png";
 import app from "../../Assets/appstore.png";
-import Feat from "../Feat/Feat";
+// import Feat from "../Feat/Feat";
+import HeaderImage from "../HeaderImage/HeaderImage";
 import "./hawlt.css";
 
 const Hawlt = () => {
   return (
     <>
-      <Feat />
+      {/* <Feat /> */}
+      <HeaderImage />
       <div className="ht__possibility section__padding" id="possibility">
         <div className="ht__possibility-image">
           <img src={image} alt="possibility" />

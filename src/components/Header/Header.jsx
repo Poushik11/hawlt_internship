@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import home from "../../Assets/home.png";
-import HeaderImage from "../HeaderImage/HeaderImage";
+// import HeaderImage from "../HeaderImage/HeaderImage";
 import { data } from "../../Assets/data/pgdata";
 
 const Header = () => {
@@ -78,7 +78,7 @@ const Header = () => {
           <img src={home} alt="home" />
         </div>
       </div>
-      <HeaderImage />
+      {/* <HeaderImage /> */}
     </>
   );
 };

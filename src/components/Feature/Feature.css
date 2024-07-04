@@ -32,7 +32,7 @@
   font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.04em;
-  color: #ffffff;
+  color: #503c3c;
 }
 .gpt3__features-container__feature-title div {
   width: 38px;
@@ -52,7 +52,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  color: var(--color-text);
+  color: #000;
 }
 
 @media screen and (max-width: 550px) {
