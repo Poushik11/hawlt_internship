@@ -1,0 +1,97 @@
+.why-use-hawlt {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.why-use-hawlt h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.why-use-hawlt h2 span {
+  color: purple;
+  font-weight: bold;
+}
+
+.why-use-hawlt h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: black;
+  margin: 10px auto;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.feature .icon {
+  flex: 0 0 120px; /* Larger icon size */
+  margin-left: 20px;
+}
+
+.feature .content {
+  display: flex;
+  align-items: center;
+}
+.feature.reverse .icon {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.feature.reverse .content {
+  order: 2;
+}
+
+.feature h3 {
+  font-size: 100px;
+  margin: 0 10px 0 0;
+  color: #f0b540;
+}
+
+.feature p {
+  font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media (max-width: 600px) {
+  .feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature.reverse {
+    flex-direction: column;
+  }
+
+  .feature .icon,
+  .feature.reverse .icon {
+    margin: 0 0 10px 0;
+  }
+
+  .feature .content,
+  .feature.reverse .content {
+    flex-direction: column;
+    align-items: center;
+    order: 1;
+  }
+
+  .feature h3 {
+    font-size: 36px;
+  }
+
+  .feature p {
+    text-align: center;
+  }
+}

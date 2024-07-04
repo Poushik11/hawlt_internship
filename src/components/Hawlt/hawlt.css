@@ -11,7 +11,8 @@
 }
 .ht__possibility-image img {
   width: 70%;
-  height: 80%;
+  height: 90%;
+  border-radius: 20%;
 }
 .ht__possibility-content {
   display: flex;

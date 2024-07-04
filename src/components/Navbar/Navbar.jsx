@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import logo from "../../Assets/logo.png";
+
 import "./Navbar.css";
 import { Link, NavLink } from "react-router-dom";
 import Modal from "../Contact/Modal"; // Ensure correct path to Modal
@@ -64,7 +64,7 @@ const Navbar = () => {
     <div className="nav__navbar">
       <div className="nav__navbar-links">
         <Link className="main_logo" to="/">
-          <img src={logo} alt="logo" />
+          <p className="logo_name">Hawlt</p>
         </Link>
         <div className="nav__navbar-links_container">
           <Menu onContactClick={() => setShowModal(true)} />

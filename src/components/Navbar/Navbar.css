@@ -13,7 +13,7 @@
   --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
 
-  --color-bg: #040c18;
+  --color-bg: white;
   --color-footer: #031b34;
   --color-blog: #042c54;
   --color-text: #81afdd;
@@ -27,15 +27,19 @@
   align-items: center;
 }
 
-.main_logo {
-  margin-right: 2rem;
+.logo_name {
+  margin-right: 10rem;
+  color: #a616b9;
+  font-weight: 900;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.main_logo img {
+/* .main_logo img {
   width: 30%;
   height: 30%;
   mix-blend-mode: color-dodge;
-}
+} */
 
 .nav__navbar-links_container {
   display: flex;
@@ -51,7 +55,7 @@
 .nav__navbar-links_container p,
 .nav__navbar-sign p,
 .nav__navbar-menu_container p {
-  color: #fff;
+  /* color: #fff; */
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 18px;
@@ -72,7 +76,7 @@
   font-size: 18px;
   line-height: 25px;
   border-radius: 5px;
-  color: #fff;
+  /* color: #fff; */
   border: none;
   outline: none;
   cursor: pointer;
