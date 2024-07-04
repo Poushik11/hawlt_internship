@@ -1,16 +1,16 @@
 import React from "react";
 import "./footer.css";
-import logo from "../../Assets/hawltlogo.jpg";
+import logo from "../../Assets/logo1.png";
 
 const Footer = () => {
   return (
     <div className="ft__footer section__padding">
-      <div className="ft__footer-heading">
+      {/* <div className="ft__footer-heading">
         <h1 className="gradient__text">Subscribe to Our Newsletter</h1>
       </div>
       <div className="ft__footer-btn">
         <p>Subscribe</p>
-      </div>
+      </div> */}
       <div className="ft__footer-links">
         <div className="ft__footer-links_logo">
           <img className="clogo" src={logo} alt="logo" />
