@@ -13,10 +13,11 @@
 
 .modal-content {
     background-color: #ffffff;
-    width: 400px;
-    padding: 20px;
+    width: 500px;
+    padding: 30px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .close-button {
@@ -32,34 +33,71 @@
     color: #555555;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: #6f2dbd;
+    /* Purple color for "us" */
+}
+
+p {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
 }
 
 label {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
 }
 
 input,
-textarea,
-button {
+textarea {
     padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
 }
 
 button {
-    background-color: #007bff;
-    color: #ffffff;
+    padding: 10px;
     border: none;
+    border-radius: 4px;
+    background-color: #6f2dbd;
+    color: #ffffff;
+    font-size: 16px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #5a23a4;
 }

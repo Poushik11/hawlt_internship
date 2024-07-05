@@ -35,7 +35,7 @@ const Menu = ({ onContactClick }) => (
     </p>
     <p>
       <NavLink
-        to="#About-Us"
+        to="about-us"
         className={({ isActive }) =>
           `block py-2 pr-4 pl-3 duration-200 ${
             isActive ? "text-orange-700" : "text-gray-700"
@@ -100,20 +100,31 @@ const Navbar = () => {
           </div>
         )}
       </div>
-
       <Modal show={showModal} onClose={() => setShowModal(false)}>
-        <h2>Contact Us</h2>
+        <h2>
+          Contact <span className="highlight">us</span>
+        </h2>
+        <p>
+          Want to get in touch? Send us your questions, and we'll respond as
+          quickly as we can.
+        </p>
         <form>
+          <div className="form-row">
+            <label>
+              First name
+              <input type="text" name="firstName" />
+            </label>
+            <label>
+              Last name
+              <input type="text" name="lastName" />
+            </label>
+          </div>
           <label>
-            Name:
-            <input type="text" name="name" />
-          </label>
-          <label>
-            Email:
+            Email address
             <input type="email" name="email" />
           </label>
           <label>
-            Message:
+            Your message
             <textarea name="message"></textarea>
           </label>
           <button type="submit">Submit</button>

@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import App from "./App";
 import Home from "./pages/Home";
+import AboutPage from "./pages/AboutPage";
 import {
   Route,
   RouterProvider,
@@ -19,7 +20,7 @@ const router = createBrowserRouter(
       <Route path="rent" element={<Home />} />
       <Route path="sign-in" element={<Home />} />
       <Route path="register" element={<Home />} />
-      <Route path="about-us" element={<Home />} />
+      <Route path="about-us" element={<AboutPage />} />
     </Route>
   )
 );
