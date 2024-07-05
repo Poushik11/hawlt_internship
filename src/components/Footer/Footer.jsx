@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import logo from "../../Assets/logo1.png";
+import Social from "../social/social";
 
 const Footer = () => {
   return (
@@ -38,6 +39,7 @@ const Footer = () => {
           <p>landline</p>
         </div>
       </div>
+      <Social />
       <div className="ft__footer-copyright">
         <p>© Copyright 2024 All Rights Reserved</p>
       </div>
