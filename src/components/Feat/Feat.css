@@ -39,6 +39,10 @@
   /* Larger icon size */
   margin-left: 20px;
 }
+.icon img {
+  width: 100px;
+  height: 100px;
+}
 
 .feature .content {
   display: flex;

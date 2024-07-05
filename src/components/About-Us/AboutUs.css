@@ -1,101 +1,101 @@
 .about-container {
-    font-family: Arial, sans-serif;
-    padding: 40px;
-    color: #333333;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+  color: #333333;
+  margin-top: 10rem;
 }
 
 .about-header {
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    gap: 200px;
-    margin-left: 300px;
-    margin-right: 300px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .about-header h1 {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .highlight {
-    color: #6f2dbd;
-    /* Purple color for highlighted text */
+  color: #6f2dbd;
+  /* Purple color for highlighted text */
 }
 
 .about-header p {
-    font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    font-weight: 500;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .about-content {
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-    font-size: 22px;
-    text-align: center;
-    margin-top: 150px;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 150px;
+  gap: 20px;
 }
 
 .about-text {
-    width: 60%;
+  width: 60%;
 }
 
 .about-text p {
-    font-size: 22px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .about-image {
-    width: 492px;
-    height: 540px;
+  width: 492px;
+  height: 540px;
 }
 
 .about-image img {
-    width: 100%;
-    border-radius: 8px;
-    border: 4px solid blue;
+  width: 100%;
+  border-radius: 8px;
+  border: 4px solid blue;
 }
 
 .about-footer {
-    text-align: center;
-    margin-top: 60px;
+  text-align: center;
+  margin-top: 60px;
 }
 
 .about-stats {
-    display: flex;
-    justify-content: space-around;
-
+  display: flex;
+  justify-content: space-around;
 }
 
 .stat-item {
-    text-align: center;
+  text-align: center;
 }
 
 .stat-number {
-    color: #6f2dbd;
-    font-size: 60px;
-    font-weight: bold;
-    display: block;
+  color: #6f2dbd;
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
 }
 
 .stat-text {
-    font-size: 35px;
+  font-size: 35px;
 }
 
 .star {
-    color: gold;
+  color: gold;
 }
 
 .third-paragraph {
-    width: 100%;
-    text-align: left;
-    margin-top: 40px;
-    font-size: 16px;
-    line-height: 1.6;
+  width: 100%;
+  text-align: left;
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 1.6;
 }

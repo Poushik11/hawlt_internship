@@ -12,6 +12,7 @@
 .about-footer1 {
   text-align: center;
   margin-top: 200px;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -21,7 +22,6 @@
 .about-stats1 {
   display: flex;
   justify-content: space-around;
-
 }
 
 .stat-item1 {
