@@ -12,10 +12,19 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
+    <Route
+      path="/"
+      element={
+        <>
+          <ScrollToTop />
+          <App />
+        </>
+      }
+    >
       <Route path="" element={<Home />} />
       <Route path="rent" element={<Home />} />
       <Route path="sign-in" element={<Home />} />
