@@ -34,7 +34,7 @@ const Header = () => {
     // Keep suggestions visible for a moment after hover
     setTimeout(() => {
       setShowSuggestions(false);
-    }, 1000); // Adjust the delay as needed
+    }, 2000); // Adjust the delay as needed
   };
 
   return (
