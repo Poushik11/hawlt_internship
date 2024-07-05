@@ -1,8 +1,15 @@
 .nav__navbar {
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 2rem 6rem;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* margin-bottom: 5rem; */
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
@@ -87,7 +94,6 @@
 .nav__navbar-menu_container button:hover {
   background: #a616b9;
 }
-
 
 .nav__navbar-menu {
   margin-left: 1rem;

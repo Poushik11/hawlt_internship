@@ -2,6 +2,7 @@
 
 /* Header container */
 .hd__header {
+  margin-top: 5rem;
   display: flex;
 }
 

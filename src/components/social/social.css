@@ -10,7 +10,7 @@
 }
 
 ul.submenu {
-  background-color: #212121;
+  background-color: #031b34;
   border-radius: 5px;
   display: inline-block;
   padding: 4px 10px;
@@ -74,7 +74,7 @@ ul.submenu li a:hover i.fa-twitter::after {
   opacity: 1;
 }
 
-ul.submenu li a:hover i.fa-google-plus::after {
+ul.submenu li a:hover i.fa-linkedin::after {
   height: 200%;
   width: 200%;
   background-color: rgb(211, 72, 54);

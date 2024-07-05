@@ -23,7 +23,7 @@ const SocialMenu = () => {
         </li>
         <li>
           <a href="https://www.linkedin.com/company/hawltnoww/">
-            <i className="fa fa-google-plus"></i>
+            <i className="fa fa-linkedin"></i>
           </a>
         </li>
       </ul>
