@@ -4,6 +4,7 @@
 .hd__header {
   margin-top: 5rem;
   display: flex;
+  overflow-x: hidden;
 }
 
 /* Main content area */

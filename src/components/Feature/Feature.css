@@ -20,6 +20,7 @@
   align-items: flex-start;
   flex-direction: row;
   margin: 1rem;
+  overflow-x: hidden;
 }
 .gpt3__features-container__feature-title {
   flex: 1;

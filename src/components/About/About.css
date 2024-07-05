@@ -1,7 +1,7 @@
 .about__whatgpt3 {
   display: flex;
   flex-direction: column;
-
+  overflow-x: hidden;
   padding: 2rem;
   background: var(--color-footer);
 

@@ -1,11 +1,12 @@
 .nav__navbar {
   display: flex;
   position: fixed;
+  overflow-x: hidden;
   top: 0;
-  width: 100%;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 2rem 8rem;
   z-index: 1000;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;

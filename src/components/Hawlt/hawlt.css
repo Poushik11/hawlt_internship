@@ -1,6 +1,7 @@
 .ht__possibility {
   display: flex;
   flex-direction: row;
+  overflow-x: hidden;
 }
 .ht__possibility-image {
   display: flex;

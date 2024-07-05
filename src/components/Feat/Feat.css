@@ -4,6 +4,7 @@
   max-width: 800px;
   padding: 20px;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .why-use-hawlt h2 {

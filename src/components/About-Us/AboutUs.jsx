@@ -7,7 +7,11 @@ const About = () => {
 
   useEffect(() => {
     if (aboutRef.current) {
-      aboutRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      const topPosition =
+        aboutRef.current.getBoundingClientRect().top +
+        document.documentElement.scrollTop -
+        150;
+      aboutRef.current.scrollIntoView({ top: topPosition, behavior: "smooth" });
     }
   }, []);
   return (
