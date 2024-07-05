@@ -1,7 +1,7 @@
 .nav__navbar {
   display: flex;
   position: fixed;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   top: 0;
   width: 100vw;
   justify-content: space-between;
