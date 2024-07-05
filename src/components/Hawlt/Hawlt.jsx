@@ -18,8 +18,15 @@ const Hawlt = () => {
           <img src={image} alt="possibility" />
         </div>
         <div className="ht__possibility-content">
-          <h4>GET THE HAWLT APP</h4>
-          <h1 className="gradient__text">Explore the Hawlt .</h1>
+          <h1 className>GET THE</h1>
+          <h1>
+            <span className="highlight">HAWLT</span> APP
+          </h1>
+          <p>
+            Effortless room reservations are now <br />
+            exclusively available through our app!
+          </p>
+
           <p>Download App From.</p>
 
           <div className="down-btn">
