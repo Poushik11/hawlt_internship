@@ -6,4 +6,57 @@
   /* border-radius: 10%; */
   margin-bottom: 100px;
   /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  margin-top: 1px;
+}
+
+.about-footer1 {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.logo {
+  width: 150px;
+}
+
+.about-stats1 {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.stat-item1 {
+  text-align: center;
+  display: flex;
+  gap: 15px;
+}
+
+.stat-number1 {
+  color: #e71a21;
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-number2 {
+  color: #fbf01d;
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-number3 {
+  color: #2dbd53;
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-text1 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.highlight1 {
+  color: #6f2dbd;
+  /* Purple color for highlighted text */
 }

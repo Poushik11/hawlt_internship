@@ -68,7 +68,8 @@
 
 .nav__navbar-sign button,
 .nav__navbar-menu_container button {
-  padding: 0.1rem 1rem;
+  padding: 10px 15px;
+  margin-right: 20px;
   background: #ff4820;
   border-radius: 5px;
   font-family: var(--font-family);
@@ -81,6 +82,12 @@
   outline: none;
   cursor: pointer;
 }
+
+.nav__navbar-sign button:hover,
+.nav__navbar-menu_container button:hover {
+  background: #a616b9;
+}
+
 
 .nav__navbar-menu {
   margin-left: 1rem;

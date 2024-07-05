@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutUs.css";
-import placeholderImage from "../../Assets/home.png"; // Replace with the correct path to your image
+import placeholderImage from "../../Assets/about-us.jfif"; // Replace with the correct path to your image
 
 const About = () => {
   return (
