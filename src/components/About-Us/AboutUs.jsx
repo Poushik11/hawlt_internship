@@ -1,19 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import "./AboutUs.css";
 import placeholderImage from "../../Assets/about-us.jfif"; // Replace with the correct path to your image
 
 const About = () => {
   const aboutRef = useRef(null);
-
-  useEffect(() => {
-    if (aboutRef.current) {
-      const topPosition =
-        aboutRef.current.getBoundingClientRect().top +
-        document.documentElement.scrollTop -
-        150;
-      aboutRef.current.scrollIntoView({ top: topPosition, behavior: "smooth" });
-    }
-  }, []);
   return (
     <div ref={aboutRef} className="about-container">
       <header className="about-header">
