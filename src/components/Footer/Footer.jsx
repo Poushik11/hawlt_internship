@@ -2,6 +2,7 @@ import React from "react";
 import "./footer.css";
 import logo from "../../Assets/logo1.png";
 import Social from "../social/social";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -28,7 +29,9 @@ const Footer = () => {
         <div className="ft__footer-links_div">
           <h4>Company</h4>
           <p>Partner with Us</p>
-          <p>List Your Policy</p>
+          <Link to="/privacy-policy">
+            <p>Privacy Policy</p>
+          </Link>
           <p>Contact</p>
           <p>Media</p>
         </div>
@@ -36,7 +39,6 @@ const Footer = () => {
           <h4>Get in touch</h4>
           <p>+91 12432414</p>
           <p>info@hawlt.com</p>
-          <p>landline</p>
         </div>
       </div>
       <Social />

@@ -6,13 +6,14 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import App from "./App";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import Privacy from "./pages/Privacy";
 import {
   Route,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
       <Route path="sign-in" element={<Home />} />
       <Route path="register" element={<Home />} />
       <Route path="about-us" element={<AboutPage />} />
+      <Route path="privacy-policy" element={<Privacy />} />
     </Route>
   )
 );
