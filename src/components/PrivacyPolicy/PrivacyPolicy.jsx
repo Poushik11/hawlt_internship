@@ -1,28 +1,29 @@
 // src/PrivacyPolicy.js
 
 import React from "react";
-import "./privacy.css"; // Optional: for styling
+import "./privacy.css"; // Import the CSS file
 
 const PrivacyPolicy = () => {
   return (
-    <div className="privacy-policy-container">
-      <h1>Privacy Policy</h1>
+    <div className="privacy-container">
+      <h1 className="main-heading">
+        <span>Privacy</span> <span className="highlight">Policy</span>
+      </h1>
 
-      <section>
-        <h1>Privacy Policy</h1>
-        <p>Effective Date: [Insert Date]</p>
-        <h2>Introduction</h2>
-        <h1>Privacy Policy</h1>
-        <h2>Introduction</h2>
-        <p>
+      <section className="section">
+        <p className="effective-date">Effective Date: [Insert Date]</p>
+        <h2 className="sub-heading">Introduction</h2>
+        <p className="text">
           Welcome to Hawlt. We are committed to protecting your personal
           information and your right to privacy. If you have any questions or
           concerns about our policy, or our practices with regards to your
           personal information, please contact us at [Your Contact Information].
         </p>
+      </section>
 
-        <h2>Information We Collect</h2>
-        <p>
+      <section className="section">
+        <h2 className="sub-heading">Information We Collect</h2>
+        <p className="text">
           We collect personal information that you provide to us voluntarily
           when you express an interest in obtaining information about us or our
           PG (Paying Guest) services, when you participate in activities on the
@@ -31,26 +32,26 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section>
-        <h2>How We Use Your Information</h2>
-        <p>
+      <section className="section">
+        <h2 className="sub-heading">How We Use Your Information</h2>
+        <p className="text">
           We use the information we collect or receive to communicate directly
           with you. We may also send you promotional emails containing
           information about our PG services.
         </p>
       </section>
 
-      <section>
-        <h2>Sharing Your Information</h2>
-        <p>
+      <section className="section">
+        <h2 className="sub-heading">Sharing Your Information</h2>
+        <p className="text">
           We do not share, sell, rent or trade any of your information with
           third parties for their promotional purposes.
         </p>
       </section>
 
-      <section>
-        <h2>Your Data Protection Rights</h2>
-        <p>
+      <section className="section">
+        <h2 className="sub-heading">Your Data Protection Rights</h2>
+        <p className="text">
           You have the right to access, update or to delete the information we
           have on you. If you make a request, we have one month to respond to
           you. If you would like to exercise any of these rights, please contact
@@ -58,28 +59,29 @@ const PrivacyPolicy = () => {
         </p>
       </section>
 
-      <section>
-        <h2>Changes to This Privacy Policy</h2>
-        <p>
+      <section className="section">
+        <h2 className="sub-heading">Changes to this privacy policy.</h2>
+        <p className="text">
           We may update our Privacy Policy from time to time. We will notify you
           of any changes by posting the new Privacy Policy on this page. You are
           advised to review this Privacy Policy periodically for any changes.
         </p>
       </section>
 
-      <section>
-        <h2>Contact Us</h2>
-        <p>
+      <section className="section">
+        <h2 className="sub-heading">Contact Us</h2>
+        <p className="text">
           If you have any questions about this Privacy Policy, please contact
           us:
         </p>
-        <ul>
-          <li>By email: [Your Email Address]</li>
+        <ul className="contact-list">
           <li>
-            By visiting this page on our website: [Your Website Contact Page
-            URL]
+            By email: <span className="highlight1">Support@hawlt.com</span>
           </li>
-          <li>By phone number: [Your Phone Number]</li>
+          <li>By contacting us through the website.</li>
+          <li>
+            By phone number: <span className="highlight1">+91 9353018894</span>
+          </li>
         </ul>
       </section>
     </div>

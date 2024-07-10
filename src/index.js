@@ -14,6 +14,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import TermsConditions from "./pages/TermsConditions";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
       <Route path="register" element={<Home />} />
       <Route path="about-us" element={<AboutPage />} />
       <Route path="privacy-policy" element={<Privacy />} />
+      <Route path="terms-conditions" element={<TermsConditions />} />
     </Route>
   )
 );

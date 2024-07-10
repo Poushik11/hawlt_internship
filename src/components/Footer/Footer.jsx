@@ -7,17 +7,14 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="ft__footer section__padding">
-      {/* <div className="ft__footer-heading">
-        <h1 className="gradient__text">Subscribe to Our Newsletter</h1>
-      </div>
-      <div className="ft__footer-btn">
-        <p>Subscribe</p>
-      </div> */}
       <div className="ft__footer-links">
         <div className="ft__footer-links_logo">
           <img className="clogo" src={logo} alt="logo" />
           <p>Head Office</p>
-          <p>Banglore,Karnataka ,India -XXXXXX</p>
+          <p>
+            14th Cross Rd, 5th Main Rd, Sector 6, HSR Layout, Bengaluru,
+            Karnataka 560102
+          </p>
         </div>
         <div className="ft__footer-links_div">
           <h4>Carrears</h4>
@@ -29,6 +26,9 @@ const Footer = () => {
         <div className="ft__footer-links_div">
           <h4>Company</h4>
           <p>Partner with Us</p>
+          <Link to="/terms-conditions">
+            <p>Terms and Conditions</p>
+          </Link>
           <Link to="/privacy-policy">
             <p>Privacy Policy</p>
           </Link>
@@ -37,8 +37,8 @@ const Footer = () => {
         </div>
         <div className="ft__footer-links_div">
           <h4>Get in touch</h4>
-          <p>+91 12432414</p>
-          <p>info@hawlt.com</p>
+          <p>+91 9353018894</p>
+          <p>Support@hawlt.com</p>
         </div>
       </div>
       <Social />
