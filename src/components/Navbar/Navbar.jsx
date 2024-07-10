@@ -5,21 +5,9 @@ import { Link, NavLink } from "react-router-dom";
 import Modal from "../Contact/Modal"; // Ensure correct path to Modal
 import "./Navbar.css";
 
-const Menu = ({ onContactClick }) => (
+const Menu = () => (
   <>
-    <p>
-      <NavLink
-        to="/rent"
-        className={({ isActive }) =>
-          `block py-2 pr-4 pl-3 duration-200 ${
-            isActive ? "text-orange-700" : "text-gray-700"
-          } border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
-        }
-      >
-        Rent
-      </NavLink>
-    </p>
-    <p>
+    {/* <p>
       <NavLink
         to="/property"
         className={({ isActive }) =>
@@ -30,7 +18,7 @@ const Menu = ({ onContactClick }) => (
       >
         Property
       </NavLink>
-    </p>
+    </p> */}
     <p>
       <NavLink
         to="/about-us"
@@ -56,12 +44,15 @@ const Navbar = () => {
         <Link className="main_logo" to="/">
           <p className="logo_name">Hawlt</p>
         </Link>
-        <div className="nav__navbar-links_container flex justify-center flex-grow">
+        {/* <div className="nav__navbar-links_container flex justify-center flex-grow">
           <Menu onContactClick={() => setShowModal(true)} />
-        </div>
+        </div> */}
       </div>
       <div className="nav__navbar-sign flex items-center">
-        <button onClick={() => setShowModal(true)}>Contact Us</button>
+        <Menu onContactClick={() => setShowModal(true)} />
+        <button className="px-3" onClick={() => setShowModal(true)}>
+          Contact Us
+        </button>
         <button className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-purple-500 transition-colors duration-200">
           Login/Register
         </button>
@@ -96,7 +87,7 @@ const Navbar = () => {
       </div>
       <Modal show={showModal} onClose={() => setShowModal(false)}>
         <h2>
-          Contact <span className="highlight">us</span>
+          Contact <span className="highlight1">Us</span>
         </h2>
         <p>
           Want to get in touch? Send us your questions, and we'll respond as

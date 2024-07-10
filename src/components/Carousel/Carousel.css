@@ -1,12 +1,11 @@
 .carousel-container {
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   font-family: Arial, sans-serif;
-  margin-bottom: 50px;
   overflow-x: hidden;
   /* overflow-y: hidden; */
-  height: 600px;
+  height: 500px;
 }
 
 .carousel-container h2 {
