@@ -11,13 +11,15 @@ const PrivacyPolicy = () => {
       </h1>
 
       <section className="section">
-        <p className="effective-date">Effective Date: [Insert Date]</p>
+        <p className="effective-date">Effective Date: 10/07/24</p>
         <h2 className="sub-heading">Introduction</h2>
         <p className="text">
           Welcome to Hawlt. We are committed to protecting your personal
           information and your right to privacy. If you have any questions or
           concerns about our policy, or our practices with regards to your
-          personal information, please contact us at [Your Contact Information].
+          personal information, please contact us at{" "}
+          <span className="highlight1">Support@hawlt.com</span> or by phone at
+          <span className="highlight1">+91 9353018894.</span>
         </p>
       </section>
 
@@ -52,10 +54,12 @@ const PrivacyPolicy = () => {
       <section className="section">
         <h2 className="sub-heading">Your Data Protection Rights</h2>
         <p className="text">
-          You have the right to access, update or to delete the information we
+          You have the right to access, update, or delete the information we
           have on you. If you make a request, we have one month to respond to
-          you. If you would like to exercise any of these rights, please contact
-          us at our provided contact information.
+          you. If you would like to exercise any of these rights, including the
+          deletion of your account, please contact us at{" "}
+          <span className="highlight1">Support@hawlt.com</span> or by phone at
+          <span className="highlight1">+91 9353018894.</span>
         </p>
       </section>
 
