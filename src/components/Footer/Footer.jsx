@@ -21,7 +21,9 @@ const Footer = () => {
           <p>Blogs</p>
           <p>List your property</p>
           <p>Sitemap</p>
-          <p>FAQs</p>
+          <Link to="/Faq">
+            <p>FAQs</p>
+          </Link>
         </div>
         <div className="ft__footer-links_div">
           <h4>Company</h4>
@@ -33,7 +35,6 @@ const Footer = () => {
             <p>Privacy Policy</p>
           </Link>
           <p>Contact</p>
-          <p>Media</p>
         </div>
         <div className="ft__footer-links_div">
           <h4>Get in touch</h4>
