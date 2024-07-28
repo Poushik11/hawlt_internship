@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-# nginx for production
+# nginx for production  ..
 FROM nginx:alphine
 
 COPY --from=build /hawlt/build /usr/share/nginx/html
