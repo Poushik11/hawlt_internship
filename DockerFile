@@ -1,0 +1,20 @@
+FROM node as build
+
+WORKDIR /hawlt
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+# nginx for production
+FROM nginx:alphine
+
+COPY --from=build /hawlt/build /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 8081
+
+CMD ["nginx", "-g", "deamon off;"]
