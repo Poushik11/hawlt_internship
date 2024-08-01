@@ -28,10 +28,10 @@ const Footer = () => {
         <div className="ft__footer-links_div">
           <h4>Company</h4>
           <p>Partner with Us</p>
-          <Link to="/terms-conditions">
+          <Link to="/terms-conditions" target="_blank">
             <p>Terms and Conditions</p>
           </Link>
-          <Link to="/privacy-policy">
+          <Link to="/privacy-policy" target="_blank">
             <p>Privacy Policy</p>
           </Link>
           <p>Contact</p>
